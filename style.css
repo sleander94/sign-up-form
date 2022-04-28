@@ -1,27 +1,24 @@
 * {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+
 }
 
 body {
     background-color: rgb(230, 230, 230);
     display: flex;
     flex: 1 1 auto;
-    width: auto;
+    width: 100vw;
     height: 100vh;
 }
 
 .image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-image: url(images/momo-UmxKy_dulqk-unsplash.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
-    min-width: 40vw;
+    width: 40vw;
 }
 
 .content-container {
@@ -33,13 +30,15 @@ body {
 .header {
     background-color: rgb(230, 230, 230);
     font-size: 1.4rem;
+    padding-left: 2rem;
     font-weight: 700;
-    min-height: 30vh, 300px;
+    height: 300px;
 }
 
 .header p:first-child {
     margin-top: 8rem;
     margin-bottom: 1rem;
+    max-width: 60rem;
 }
 
 .header p:last-child {
@@ -52,22 +51,35 @@ label, input {
 
 #sign-up {
     background-color: white;
-    min-height: 40vh, 600px;
+    height: 300px;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+    box-shadow: 0px 2px 8px gray;
 }
 
 #sign-up p {
+    margin-top: 1.4rem;
     margin-bottom: 2rem;
     font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.form-rows {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid red;
 }
 
 .form-row {
     display: flex;
-    justify-content: left;
+    border: 1px solid red;
 }
+
 
 input {
     height: 1.4rem;
-    margin-bottom: 1.5rem
+    margin-bottom: 1.5rem;
 }
 
 label {
@@ -78,5 +90,29 @@ label {
 
 .footer {
     background-color: rgb(230, 230, 230);
-    min-height: 30vh, 300px;
+    height: 300px;
+}
+
+button {
+    font-size: 1.4rem;
+    color: white;
+    background-color: rgb(23, 130, 23);
+    margin: 24px;
+    margin-top: 36px;
+    padding: 12px;
+    padding-left: 48px;
+    padding-right: 48px;
+    border-radius: 8px;
+}
+
+.footer p {
+    margin-left: 26px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(23, 130, 23);
 }
