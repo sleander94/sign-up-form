@@ -134,6 +134,7 @@ input {
 
 input:focus {
     outline: 2px solid rgb(28, 125, 200);
+    box-shadow: 3px 3px 3px gray;
 }
 
 input:not(:placeholder-shown):invalid {
