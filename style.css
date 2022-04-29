@@ -110,7 +110,7 @@ body {
 .form-rows {
     display: flex;
     flex-wrap: wrap;
-    width: 182px;
+    min-width: 182px;
     
 }
 
@@ -127,6 +127,8 @@ input {
     height: 1.4rem;
     margin-bottom: 1.5rem;
     border: 1px solid rgb(239, 234, 234);
+    border-radius: 2px;
+    min-width: 20vw;
 
 }
 
@@ -134,8 +136,12 @@ input:focus {
     outline: 2px solid rgb(28, 125, 200);
 }
 
-input:invalid {
+input:not(:placeholder-shown):invalid {
     border: 1px solid red;
+}
+
+input:not(:placeholder-shown):valid {
+    border: 1px solid green;
 }
 
 label {
