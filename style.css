@@ -19,18 +19,25 @@ body {
     height: 100vh;
 }
 
+/* Left side banner image and logo */
+
 .image-container {
     position: relative;
     background-image: url(images/momo-UmxKy_dulqk-unsplash.jpg);
     background-size: cover;
     min-height: 100vh;
-    width: 40vw;
+    min-width: 40vw;
+}
+
+.credit-container, .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 725px;
 }
 
 .credit {
-    position: absolute;
-    bottom: 12px;
-    left: 8px;
     font-size: .7rem;
     color: rgb(208, 204, 204);
 }
@@ -38,12 +45,8 @@ body {
 .logo-container {
     padding-right:24px;
     padding-left: 24px;
-    display: flex;
     gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 250px;
+    top: 380px;
     background-color: rgba(37, 37, 37, 0.454);
 }
 
@@ -51,12 +54,16 @@ body {
     font-size: 4rem;
     font-family: norse;
     text-align: center;
-    color: rgb(208, 204, 204);
+    color: white;
 }
 
 .odin {
-    height: 6rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 7rem;
 }
+
+/* Right side text header */
 
 .content-container {
     display: flex;
@@ -75,20 +82,18 @@ body {
 .header p:first-child {
     margin-top: 8rem;
     margin-bottom: 1rem;
-    max-width: 60rem;
 }
 
 .header p:last-child {
     margin-bottom: 3rem;
 }
 
-label, input {
-    display: block;
-}
+/* Sign-up form */
 
 #sign-up {
     background-color: white;
     height: 300px;
+
     padding-bottom: 1rem;
     padding-left: 2rem;
     position: relative;
@@ -105,23 +110,42 @@ label, input {
 .form-rows {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid red;
+    width: 182px;
+    
 }
 
 .form-row {
     display: flex;
-    border: 1px solid red;
+    gap: 64px;
 }
 
+label, input {
+    display: block;
+}
 
 input {
     height: 1.4rem;
     margin-bottom: 1.5rem;
+    border: 1px solid rgb(239, 234, 234);
+
+}
+
+input:focus {
+    outline: 2px solid rgb(28, 125, 200);
+}
+
+input:invalid {
+    border: 1px solid red;
 }
 
 label {
     font-size: .8rem;
+    margin-bottom: 8px;
 }
+
+
+
+/* Sign-up button and log in link */
 
 .footer {
     background-color: rgb(230, 230, 230);
