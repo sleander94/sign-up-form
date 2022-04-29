@@ -123,13 +123,16 @@ label, input {
     display: block;
 }
 
+input:-webkit-autofill, input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+  }
+
 input {
     height: 1.4rem;
     margin-bottom: 1.5rem;
     border: 1px solid rgb(239, 234, 234);
     border-radius: 2px;
     min-width: 20vw;
-
 }
 
 input:focus {
@@ -142,7 +145,7 @@ input:not(:placeholder-shown):invalid {
 }
 
 input:not(:placeholder-shown):valid {
-    border: 1px solid green;
+    border: 1px solid rgb(28, 125, 200);
 }
 
 label {
